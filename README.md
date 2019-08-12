@@ -1,6 +1,6 @@
 # distributed_file_system
 
-This distributed file system consists of 4 distributed file servers and a single client. The file system command line can support multiple functionalities like PUT, GET, LIST and EXIT. It supports redundancy and uses Socket Programming in Python.
+This distributed file system consists of 4 distributed file servers and a single client. The file system command line can support multiple functionalities like PUT, GET, LIST and EXIT. It supports redundancy and uses Socket Programming in Python. Since the socket is TCP, the system is reliable.
 
 PUT : The client divides the file into 4 quaters and stores it in a redundant fashion on 2 servers. The choice of 2 servers is made based on the hash value obtained by hashing the file name. This lets the file system to be available even if one or more servers are not up.
 
